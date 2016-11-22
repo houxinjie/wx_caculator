@@ -1,6 +1,6 @@
-<view class="panel">{{currentNumber}}</view>
+<view id="panel" style="font-size: {{fontSize}}rem">{{currentNumber}}</view>
 
-<view class="buttons">
+<view id="buttons">
     <view class="button tool row1 column1" catchtap="tapHandler" data-button="AC">AC</view>
     <view class="button tool row1 column2" catchtap="tapHandler" data-button="+/-">+/-</view>
     <view class="button tool row1 column3" catchtap="tapHandler" data-button="%">%</view>

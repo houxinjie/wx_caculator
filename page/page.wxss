@@ -1,12 +1,11 @@
-.panel {
+#panel {
     height: 327rpx;
     background: #202020;
-    font-size: 8rem;
     text-align: right;
     color: #FFF;
 }
 
-.buttons {
+#buttons {
     background: #000;
     height: 937.5rpx;
     position: relative;

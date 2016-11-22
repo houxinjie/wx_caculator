@@ -1,5 +1,6 @@
 const app = getApp()
 const initNumber = '0'
+const initFontSize = 5
 Page({
     currentNumber: initNumber,
     baseNumber: null,
@@ -7,7 +8,8 @@ Page({
     operator: null,
     prevOperator: null,
     data: {
-        currentNumber: initNumber
+        fontSize: initFontSize,
+        currentNumber: initNumber,
     },
     tapHandler(event) {
         if (!event.target.dataset.button) return
@@ -108,17 +110,17 @@ Page({
 
         switch(this.operator){
             case '+':
-            this.baseNumber += this.byNumber
-            break
+                this.baseNumber += this.byNumber
+                break
             case '-':
-            this.baseNumber -= this.byNumber
-            break
+                this.baseNumber -= this.byNumber
+                break
             case '×':
-            this.baseNumber *= this.byNumber
-            break
+                this.baseNumber *= this.byNumber
+                break
             case '÷':
-            this.baseNumber /= this.byNumber
-            break
+                this.baseNumber /= this.byNumber
+                break
         }
 
         this.currentNumber = '0'
@@ -128,21 +130,21 @@ Page({
 
     showNumber(number) {
 
-        /*
-        var fontSize:int
+        let fontSize
 
         if(number.length <= 7){
-            fontSize = 106
+            fontSize = initFontSize
         }else if(number.length <= 9){
-            fontSize = 80
-        }else if(number.length <= 13){
-            fontSize = 54
-        }else if(number.length <= 18){
-            fontSize = 42
-        }else{
-            fontSize = 32
+            fontSize = 4
+        }else if(number.length <= 12){
+            fontSize = 3
+        }else {
+            fontSize = 1.5
         }
 
+
+
+        /*
         this.label.height = fontSize + 10
         this.label.move(0, 222 - this.label.height)
 
@@ -155,6 +157,7 @@ Page({
         this.label.text = number
         */
         this.setData({
+            fontSize,
             currentNumber: number
         })
     }
