@@ -1,23 +1,23 @@
 <view id="panel" style="font-size: {{fontSize}}rem">{{currentNumber}}</view>
 
 <view id="buttons">
-    <view class="button tool row1 column1" catchtap="tapHandler" data-button="AC">AC</view>
-    <view class="button tool row1 column2" catchtap="tapHandler" data-button="+/-">+/-</view>
-    <view class="button tool row1 column3" catchtap="tapHandler" data-button="%">%</view>
-    <view class="button operator row1 column4" catchtap="tapHandler" data-button="÷">÷</view>
-    <view class="button number row2 column1" catchtap="tapHandler" data-button="7">7</view>
-    <view class="button number row2 column2" catchtap="tapHandler" data-button="8">8</view>
-    <view class="button number row2 column3" catchtap="tapHandler" data-button="9">9</view>
-    <view class="button operator row2 column4" catchtap="tapHandler" data-button="×">×</view>
-    <view class="button number row3 column1" catchtap="tapHandler" data-button="4">4</view>
-    <view class="button number row3 column2" catchtap="tapHandler" data-button="5">5</view>
-    <view class="button number row3 column3" catchtap="tapHandler" data-button="6">6</view>
-    <view class="button operator row3 column4" catchtap="tapHandler" data-button="-">-</view>
-    <view class="button number row4 column1" catchtap="tapHandler" data-button="1">1</view>
-    <view class="button number row4 column2" catchtap="tapHandler" data-button="2">2</view>
-    <view class="button number row4 column3" catchtap="tapHandler" data-button="3">3</view>
-    <view class="button operator row4 column4" catchtap="tapHandler" data-button="+">+</view>
-    <view class="button number zero row5 column1" catchtap="tapHandler" data-button="0">0</view>
-    <view class="button number row5 column3" catchtap="tapHandler" data-button=".">.</view>
-    <view class="button operator row5 column4" catchtap="tapHandler" data-button="=">=</view>
+    <view class="button tool" catchtap="tapHandler" data-button="AC">AC</view>
+    <view class="button tool" catchtap="tapHandler" data-button="+/-">+/-</view>
+    <view class="button tool" catchtap="tapHandler" data-button="%">%</view>
+    <view class="button operator" catchtap="tapHandler" data-button="÷">÷</view>
+    <view class="button number" catchtap="tapHandler" data-button="7">7</view>
+    <view class="button number" catchtap="tapHandler" data-button="8">8</view>
+    <view class="button number" catchtap="tapHandler" data-button="9">9</view>
+    <view class="button operator" catchtap="tapHandler" data-button="×">×</view>
+    <view class="button number" catchtap="tapHandler" data-button="4">4</view>
+    <view class="button number" catchtap="tapHandler" data-button="5">5</view>
+    <view class="button number" catchtap="tapHandler" data-button="6">6</view>
+    <view class="button operator" catchtap="tapHandler" data-button="-">-</view>
+    <view class="button number" catchtap="tapHandler" data-button="1">1</view>
+    <view class="button number" catchtap="tapHandler" data-button="2">2</view>
+    <view class="button number" catchtap="tapHandler" data-button="3">3</view>
+    <view class="button operator" catchtap="tapHandler" data-button="+">+</view>
+    <view class="button number zero" catchtap="tapHandler" data-button="0">0</view>
+    <view class="button number" catchtap="tapHandler" data-button=".">.</view>
+    <view class="button operator" catchtap="tapHandler" data-button="=">=</view>
 </view>

@@ -1,25 +1,36 @@
+page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 #panel {
     display: flex;
-    height: 327rpx;
     background: #202020;
     align-items: flex-end;
     color: #FFF;
     flex-direction: row-reverse;
+    flex-grow: 1;
 }
 
 #buttons {
-    background: #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: 937.5rpx;
-    position: relative;
-    font-size: 1.5rem;
+    flex-grow: 0;
+    justify-content: space-between;
 }
 
 .button {
-    position: absolute;
-    width: 186rpx;
-    height: 186rpx;
-    line-height: 186rpx;
-    text-align: center;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    font-size: 1.5rem;
 }
 
 .tool {
@@ -37,51 +48,6 @@
     background: #F98A11;
 }
 
-.row1 {
-
-}
-
-.row2 {
-    top: 187.5rpx;
-}
-
-.row3 {
-    top: 374rpx;
-}
-
-.row4 {
-    top: 561rpx;
-}
-
-.row5 {
-    top: 748rpx;
-}
-
-.column1 {
-}
-
-.column2 {
-    left: 187.5rpx;
-}
-
-.column3 {
-    left: 374rpx;
-}
-
-.column4 {
-    left: 561rpx;
-}
-
 .zero {
-    width: 373rpx;
-}
-
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
-  background: #000;
+    width: 50%;
 }
