@@ -1,4 +1,3 @@
-const app = getApp()
 const initNumber = '0'
 const initFontSize = 5
 Page({

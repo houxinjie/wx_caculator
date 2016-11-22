@@ -1,8 +1,1 @@
-App({
-  onLaunch() {
-  },
-  onShow() {
-  },
-  onHide() {
-  },
-})
+App({})
