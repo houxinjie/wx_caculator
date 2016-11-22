@@ -1,8 +1,10 @@
 #panel {
+    display: flex;
     height: 327rpx;
     background: #202020;
-    text-align: right;
+    align-items: flex-end;
     color: #FFF;
+    flex-direction: row-reverse;
 }
 
 #buttons {
