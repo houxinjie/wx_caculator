@@ -59,7 +59,7 @@ Page({
         this.showNumber(this.currentNumber)
     },
     percentButtonHandler() {
-        var number = Number(this.data.currentNumber)
+        let number = Number(this.data.currentNumber)
         number = number / 100
         this.currentNumber = number.toString()
         this.showNumber(this.currentNumber)
@@ -97,7 +97,7 @@ Page({
 
     operate(){
         if(!this.operator) return
-        var currentNumber = Number(this.currentNumber)
+        const currentNumber = Number(this.currentNumber)
 
         if(!this.byNumber){
             this.byNumber = currentNumber || this.baseNumber
