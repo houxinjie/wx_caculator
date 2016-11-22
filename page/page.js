@@ -1,5 +1,5 @@
 const initNumber = '0'
-const initFontSize = 5
+const initFontSize = 4.7
 Page({
     currentNumber: initNumber,
     baseNumber: null,
@@ -134,9 +134,9 @@ Page({
         if(number.length <= 7){
             fontSize = initFontSize
         }else if(number.length <= 9){
-            fontSize = 4
+            fontSize = 3.7
         }else if(number.length <= 12){
-            fontSize = 3
+            fontSize = 2.7
         }else {
             fontSize = 1.5
         }
