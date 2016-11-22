@@ -60,7 +60,7 @@ Page({
         this.showNumber(this.currentNumber)
     },
     percentButtonHandler() {
-        var number = Number(this.currentNumber)
+        var number = Number(this.data.currentNumber)
         number = number / 100
         this.currentNumber = number.toString()
         this.showNumber(this.currentNumber)
@@ -142,20 +142,6 @@ Page({
             fontSize = 1.5
         }
 
-
-
-        /*
-        this.label.height = fontSize + 10
-        this.label.move(0, 222 - this.label.height)
-
-        var format:TextFormat = new TextFormat
-        format.size = fontSize
-        format.align = TextFormatAlign.RIGHT
-        format.font = 'Avenir'
-        format.color = 0xFFFFFF
-        this.label.setStyle('textFormat', format)
-        this.label.text = number
-        */
         this.setData({
             fontSize,
             currentNumber: number
